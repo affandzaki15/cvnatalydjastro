@@ -1,0 +1,294 @@
+* {
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5%;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.text-section,
+.image-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.text-section h1,
+.text-section h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.text-section p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-three {
+    flex: 1;
+    padding-left: 40px; /* geser ke kanan */
+    padding-right: 20px;
+}
+
+.image-three img {
+    width: 80%;
+    gap: 30px;
+    margin-left: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.logo-square {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+.present {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #e4405f;
+}
+.present p {
+    color: #7a9ea0;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+.profil-text {
+    text-align: center;
+}
+
+.profil-text h2 {
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+.profil-text p {
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #7a9ea0;
+    line-height: 1.6;
+}
+
+.rotate-text {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #7a9ea0;
+    font-weight: 700;
+}
+
+/* Animasi muncul */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.animate.show {
+    opacity: 3;
+    transform: translateY(0);
+}
+
+/* Footer */
+.footer {
+    background-color: #0f6d73;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+/* halaman 5 */
+.fasilitas-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.fasilitas-image img {
+    width: 60%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.fasilitas-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fasilitas-item {
+    background-color: #0f6d73;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* halaman 6 */
+.syarat-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+.syarat-box {
+    background: #f7f7f7;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.syarat-box h3 {
+    background-color: #0f6d73;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.syarat-box ul {
+    padding-left: 20px;
+    color: #333;
+    font-size: 14px;
+}
+
+.syarat-box li {
+    margin-bottom: 10px;
+}
+
+/* halaman terakhir */
+.kontak-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.kontak-image img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.kontak-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+.kontak-info p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #0f6d73;
+}
+
+/* pricelist */
+.btn-pricelist {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #0f6d73;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-pricelist:hover {
+  background-color: #0c5c62;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .image-three img {
+        width: 70%;
+        margin-top: 20px;
+    }
+    .fasilitas-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fasilitas-text {
+        width: 100%;
+    }
+    .kontak-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kontak-content h2 {
+        font-size: 26px;
+    }
+}
